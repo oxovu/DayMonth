@@ -169,6 +169,7 @@ public class Game {
         while (!node.goodChoice && findLeftNeighbour(node) != null) {
             node = oneStep(findLeftNeighbour(node), root);
         }
+        System.out.println(node);
         return node;
     }
 }
